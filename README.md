@@ -121,4 +121,5 @@ The system ensures strict seat allocation rules, quota validation, and a simple 
 *Author*
 
 Kishore R
+
 Developed as part of an Admission ERP system to demonstrate full-stack development using React, Node.js, and MongoDB.
