@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4rem;
+
+  background-image: url('../images/loginBackground.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card */
+.login-card {
+  width: 360px;             
+  padding: 30px 25px;       
+  border-radius: 12px;
+
+  background: #ffffff;
+  color: #1e293b;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Logo */
+.logo {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 15px;  
+}
+
+.input-group label {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 4px;
+  color: #1b2a6b;
+  font-weight: 600;
+}
+
+/* Input */
+.input-group input,
+.role-select {
+  width: 100%;
+  padding: 10px;        
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  background: #f8fafc;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+/* Focus */
+.input-group input:focus,
+.role-select:focus {
+  border-color: #2563eb;
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  padding: 10px;       
+  border: none;
+  border-radius: 6px;
+  background: #1b2a6b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #141e4d;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #1b2a6b;
+  background: transparent;
+  color: #1b2a6b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 15px 0;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.error-text {
+  color: #d32f2f; /* Professional Red */
+  font-size: 0.85rem;
+  margin-top: 8px;
+  font-weight: 500;
+  
+  /* Animation to make it pop in */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.error-popup {
+  color: #b91c1c; /* Deep Red */
+  background-color: #fef2f2; /* Light Pink Background */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #fecaca;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.status-popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  animation: slideDown 0.4s ease-out;
+}
+
+/* Success Green */
+.status-popup.success {
+  background-color: #ecfdf5;
+  color: #059669;
+  border: 1px solid #10b981;
+}
+
+/* Error Red */
+.status-popup.error {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #f87171;
+}
